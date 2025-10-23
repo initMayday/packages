@@ -1,4 +1,5 @@
 # Maintainer: initMayday <initMayday@protonmail.com>
+
 _pkgname="declarages"
 pkgname="$_pkgname"
 pkgrel=1
