@@ -3,7 +3,7 @@
 
 _pkgname=cuarzo
 pkgname="$_pkgname-git"
-pkgver=r8.51c3759
+pkgver=r12.c504372
 pkgrel=1
 pkgdesc="The Cuarzo Framework"
 arch=('any')
@@ -11,22 +11,18 @@ url="https://github.com/CuarzoSoftware/Cuarzo"
 license=('MIT')
 depends=(
     'libxkbcommon' #> cz-core, cz-kay, cz-louvre, cz-marco
-    'libwayland-server' #> cz-crystals, cz-louvre
+    'wayland' #> everything, practically
     'libinput' #> cz-crystals, cz-louvre
-    'libwayland-client' #> cz-louvre, cz-marco
     'libgl' #> cz-louvre, cz-skia
     'libegl' #> cz-louvre, cz-skia
     'libgles' #> cz-louvre, cz-ream, cz-skia
-    'libudev' #> cz-louvre, cz-srm
+    'systemd-libs' #> cz-louvre, cz-srm
     'libxcursor' #> cz-louvre
     'libdrm' #> cz-louvre, cz-ream, cz-srm
-    'libseat' #> cz-louvre
+    'seatd' #> cz-louvre
     #> [WARNING - cz-louvre also lists pthread and dl found by cpp]
-    'libwayland-cursor' #> cz-marco
-    'libwayland-egl' #> cz-ream
-    'opengl-driver' #> [WARNING - for gbm], cz-ream, cz-srm
     'boost' #> cz-ream
-    'libvulkan' #> cz-skia
+    'vulkan-icd-loader' #> cz-skia
     'harfbuzz' #> cz-skia
     'icu' #> cz-skia
     'fontconfig' #> cz-skia
