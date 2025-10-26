@@ -22,7 +22,7 @@ depends=(
     'seatd' #> cz-louvre
     #> [WARNING - cz-louvre also lists pthread and dl found by cpp]
     'boost' #> cz-ream
-    'vulkan-icd-loader' #> cz-skia
+    'vulkan-icd-loader' 'vulkan-headers' #> cz-skia
     'harfbuzz' #> cz-skia
     'icu' #> cz-skia
     'fontconfig' #> cz-skia
